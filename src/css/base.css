@@ -1,0 +1,13 @@
+:root {
+    --text: #171616;
+    --background: #dddbd9;
+    --primary: #e28812;
+    --secondary: #7e5f35;
+    --accent: #f19a27;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Inter", sans-serif;
+}
