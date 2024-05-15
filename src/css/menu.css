@@ -1,0 +1,33 @@
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 4rem;
+}
+
+.menu-item > img {
+    width: 55%;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu-item > * {
+    margin: 0;
+    padding: 0;
+}
+
+.menu-item > p {
+    margin: 1rem;
+}
