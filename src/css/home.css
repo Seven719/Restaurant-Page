@@ -2,7 +2,6 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background: var(--background);
 }
 
 #content {
@@ -33,6 +32,7 @@ body {
 }
 
 #button-menu {
+    color: black;
     font-size: 32px;
     font-weight: 500;
     padding: 1rem 3rem;

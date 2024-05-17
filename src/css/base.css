@@ -1,12 +1,21 @@
 :root {
-    --text: #171616;
-    --background: #dddbd9;
+    --text: #F3F5F0;
+    --background: rgba(41, 41, 41, 0.4);
+    --background-menu-items: rgba(1, 1, 1, 0.8);
     --primary: #e28812;
     --secondary: #7e5f35;
     --accent: #f19a27;
 }
 
+* {
+    color: var(--text);
+}
+
 body {
+    background: url(../assets/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     margin: 0px;
     padding: 0px;
     font-family: "Inter", sans-serif;
