@@ -1,15 +1,30 @@
-const Home = document.getElementById("home")
-const About = document.getElementById("about")
-const Menu = document.getElementById("menu")
+import initHome from './home.js';
+import '../css/bar.css';
+import '../css/base.css';
+import '../css/home.css';
 
-Home.addEventListener('click', () => {
-    console.log("home")
+initHome();
+
+const buttonNav = document.querySelectorAll('.button-nav,.menu-button');
+buttonNav.forEach(element => {
+    initWebsite(element);
 })
 
-About.addEventListener('click', () => {
-    console.log("About")
-})
-
-Menu.addEventListener('click', () => {
-    console.log("Menu")
-})
+function initWebsite(element) {
+    element.addEventListener('click', () => {
+        switch (element.textContent.trim()) {
+            case "Home":
+                console.log("Home");
+                initHome()
+                break;
+            case "About":
+                console.log("About");
+                break;
+            case "Menu":
+                console.log("Menu");
+                break;
+            default:
+                alert("Error loading navigation elements. Please refresh the page.");
+        }
+    })
+}
