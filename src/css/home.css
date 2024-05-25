@@ -4,7 +4,7 @@ body {
     height: 100vh;
 }
 
-#home {
+.home {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,17 +12,17 @@ body {
     margin-top: 15vh;
 }
 
-#home > * {
+.home > * {
     margin: 1rem 0;
     padding: 0 0;
 }
 
-#home > h1 {
+.home > h1 {
     font-weight: 700;
     font-size: 64px;
 }
 
-#home > p {
+.home > p {
     font-size: 32px;
     font-weight: 300;
     width: 60%;

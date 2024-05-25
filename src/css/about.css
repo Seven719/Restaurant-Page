@@ -4,7 +4,7 @@ body {
     height: 100vh;
 }
 
-#about {
+.about {
     display: grid;
     grid-template-rows: 1fr auto 1fr;
     height: 100%;

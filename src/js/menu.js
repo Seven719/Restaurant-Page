@@ -1,7 +1,6 @@
 function initMenu() {
     const content = document.getElementById('content');
-    const menuContainer = document.createElement('div');
-    menuContainer.id = 'menu-container';
+    content.classList.add('menu-container');
 
     const menu = document.createElement('div');
     menu.id = 'menu';
@@ -10,8 +9,7 @@ function initMenu() {
         menu.appendChild(createMenuItem('pizza', 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.'));
     }
 
-    content.appendChild(menuContainer);
-    menuContainer.appendChild(menu);
+    content.appendChild(menu);
 }
 
 function createMenuItem(name, descriptionIn) {
