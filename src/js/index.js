@@ -26,15 +26,12 @@ function initWebsite(element) {
         emptyContent();
         switch (element.textContent.trim()) {
             case "Home":
-                console.log("Home");
                 initHome();
                 break;
             case "About":
-                console.log("About");
                 initAbout();
                 break;
             case "Menu":
-                console.log("Menu");
                 initMenu();
                 break;
             default:
