@@ -3,12 +3,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-    mode: "development",
     entry: {
         index: './src/js/index.js'
     },
     output: {
-        filename: '[name].js',
+        filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
         assetModuleFilename: 'assets/[name].[ext]',
         clean: true,
