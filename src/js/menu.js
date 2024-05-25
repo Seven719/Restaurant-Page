@@ -1,18 +1,17 @@
 function initMenu() {
     const content = document.getElementById('content');
-    content.style.display = 'flex';
-    content.style.flexDirection = 'column';
-    content.style.justifyContent = 'space-between';
-    content.style.alignItems = 'center';
+    const menuContainer = document.createElement('div');
+    menuContainer.id = 'menu-container';
 
     const menu = document.createElement('div');
-    menu.id = 'menu-menu';
+    menu.id = 'menu';
 
     for (let index = 0; index < 8; index++) {
         menu.appendChild(createMenuItem('pizza', 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.'));
     }
 
-    content.appendChild(menu);
+    content.appendChild(menuContainer);
+    menuContainer.appendChild(menu);
 }
 
 function createMenuItem(name, descriptionIn) {

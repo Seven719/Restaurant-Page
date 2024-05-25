@@ -4,17 +4,25 @@ body {
     height: 100vh;
 }
 
-#content > * {
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 15vh;
+}
+
+#home > * {
     margin: 1rem 0;
     padding: 0 0;
 }
 
-#content > h1 {
+#home > h1 {
     font-weight: 700;
     font-size: 64px;
 }
 
-#content > p {
+#home > p {
     font-size: 32px;
     font-weight: 300;
     width: 60%;
