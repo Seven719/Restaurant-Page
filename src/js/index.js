@@ -1,7 +1,6 @@
 import initHome from './home.js';
 import initMenu from './menu.js';
 import initAbout from './about.js';
-import '../css/bar.css';
 import '../css/base.css';
 import '../css/home.css';
 import '../css/menu.css';

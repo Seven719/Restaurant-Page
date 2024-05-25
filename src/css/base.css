@@ -18,4 +18,53 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: "Inter", sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* BAR */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 20px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+nav > * {
+    background: none;
+    font-size: 24px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+footer {
+    background: rgba(1, 1, 1, 0.5);
+    font-size: 1.2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer > * {
+    margin: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+a > img {
+    width: 2.4rem;
+    height: auto;
 }
