@@ -1,19 +1,19 @@
 function initHome() {
     const content = document.getElementById('content');
-    content.textContent = "";
+    content.style.flex = '1';
+    content.style.display = 'flex';
+    content.style.flexDirection = 'column';
+    content.style.alignItems = 'center';
+    content.style.justifyContent = 'flex-start';
+    content.style.marginTop = '15vh';
 
     const title = document.createElement('h1');
     const description = document.createElement('p')
-    const buttonMenu = document.createElement('button');
 
     title.textContent = "Best Pizza In The World";
     description.textContent = "Indulge in our mouthwatering selection of authentic Italian pizzas, crafted with love and tradition. From classic Margheritas to gourmet specialties, every bite is a taste of Italy.";
-    buttonMenu.textContent = "Menu";
 
-    buttonMenu.id = "menu";
-    buttonMenu.classList.add('menu-button');
-
-    content.append(title, description, buttonMenu);
+    content.append(title, description);
 }
 
 export default initHome;

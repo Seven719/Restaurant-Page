@@ -1,11 +1,20 @@
 import initHome from './home.js';
+import initMenu from './menu.js';
 import '../css/bar.css';
 import '../css/base.css';
 import '../css/home.css';
+import '../css/menu.css';
+
+document.body.style.backgroundImage = "url('assets/background.jpg')";
 
 initHome();
 
-const buttonNav = document.querySelectorAll('.button-nav,.menu-button');
+function emptyContent() {
+    const content = document.getElementById('content');
+    content.textContent = "";
+}
+
+const buttonNav = document.querySelectorAll('.button-nav');
 buttonNav.forEach(element => {
     initWebsite(element);
 })
@@ -15,13 +24,16 @@ function initWebsite(element) {
         switch (element.textContent.trim()) {
             case "Home":
                 console.log("Home");
-                initHome()
+                emptyContent();
+                initHome();
                 break;
             case "About":
                 console.log("About");
                 break;
             case "Menu":
                 console.log("Menu");
+                emptyContent();
+                initMenu();
                 break;
             default:
                 alert("Error loading navigation elements. Please refresh the page.");
